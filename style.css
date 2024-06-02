@@ -3,18 +3,24 @@ body{
     
     background-position: center;
     background-attachment: fixed;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0; /* Remove default margin */
     height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .content-container {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
+    margin-left: 10px;
+    align-items: baseline;
+    width: 200px;
 }
 
 img {
@@ -25,23 +31,53 @@ img {
 
 input[type="text"] {
     padding: 10px;
+    margin-left: 10px;
     font-size: 16px;
-    border: 2px solid #ccc;
+    border: 2px solid #635151;
     border-radius: 4px;
-    width: 300px; /* Adjust width as needed */
+    width: 200px; /* Adjust width as needed */
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    color: #333;
-    background-color: #f9f9f9;
+    color: rgb(255, 255, 255);
+    background-color: #4b4a4a;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input[type="text"]:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #15171a;
+    box-shadow: 0 0 5px rgba(28, 28, 29, 0.5);
 }
 
 input[type="text"]::placeholder {
-    color: #aaa;
+    color: #ffffff;
     font-style: italic;
 }
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.language-switcher button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    width: 400px; /* Fixed width for the heading */
+
+}
+
+.nanum-myeongjo-extrabold {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
